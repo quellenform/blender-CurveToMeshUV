@@ -10,8 +10,18 @@ A NodeGroup for [Blender](https://www.blender.org/) that creates curve-based mes
 
 ## What does it do?
 
-Unfortunately, Blender does not generate UVs with the [Curve to Mesh](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/curve_to_mesh.html) node, which means that texture mapping is not really possible.
+Unfortunately, Blender does not currently generate UVs with the [Curve to Mesh](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/curve_to_mesh.html) node, which means that texture mapping is not really possible.
 This NodeGroup generates these missing UVs for you, based on the existing Face Corners.
+
+
+## Configuration
+
+1. add the node to your group
+2. connect the base curve and the profile curve to the node
+3. connect the output `UVs` to a new socket of `Group Output`
+4. set the `attribute domain` of this group output to `face corner`
+5. assign an identifier for this attribute in `Output Attributes`.
+5. load the attribute in the shader with the previously assigned identifier
 
 
 
@@ -36,7 +46,7 @@ This NodeGroup generates these missing UVs for you, based on the existing Face C
 - Node cleanup & inline documentation
 
 ### v1.03
-- Restructured Options for UV-Scaling
+- Restructured options for UV-Scaling
 
 ### v1.02
 - Changed the behaviour of UV scaling
