@@ -6,7 +6,7 @@
 
 A node group for [Blender](https://www.blender.org/) that creates curve-based meshes with UVs based on [Geometry Nodes](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/index.html).
 
-
+![Screenshot](https://i.stack.imgur.com/FWlfm.jpg)
 
 ## What does it do?
 
@@ -14,6 +14,8 @@ Unfortunately, Blender does not currently generate UVs with the [Curve to Mesh](
 This node group generates these missing UVs for you, based on the existing face corners.
 
 Unlike the approach of calculating the UVs based on vertices, this variant does not modify the curves. The node works with all kinds of curves, and can also handle cyclic curves.
+
+![Complete Node](https://i.stack.imgur.com/lN4MF.jpg)
 
 
 
