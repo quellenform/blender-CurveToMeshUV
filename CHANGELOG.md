@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.5 - 2022-03-23
+### Added
+- Caps Mask (The UVs of the caps can now be scaled/textured independently of the sides in the shader)
+
 ## 1.0.4 - 2022-03-21
 ### Added
 - Triangulate Caps
