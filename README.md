@@ -8,6 +8,8 @@ A node group for [Blender](https://www.blender.org/) that creates curve-based me
 
 ![Screenshot](https://i.stack.imgur.com/FWlfm.jpg)
 
+
+
 ## What does it do?
 
 Unfortunately, Blender does not currently generate UVs with the [Curve to Mesh](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/curve_to_mesh.html) node, which means that texture mapping is not really possible.
@@ -15,19 +17,22 @@ This node group generates these missing UVs for you, based on the existing face 
 
 Unlike the approach of calculating the UVs based on vertices, this variant does not modify the curves. The node works with all kinds of curves, and can also handle cyclic curves.
 
-![Complete Node](https://i.stack.imgur.com/lN4MF.jpg)
+![Complete Node v1.0.5](https://i.stack.imgur.com/hyKRa.jpg)
 
 
 
 ## Usage
 
-1. add/import the node group from the blend-file
-2. connect the base curve and the profile curve to the node
-3. connect the output `UVs` to a new socket of `Group Output`
-4. set the `Attribute Domain` of this group output to [Face corner](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/attributes_reference.html#attribute-domains)
-5. add a [Set Material](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/material/set_material.html) node to the geometry before `Group Output`
-6. assign an identifier for this attribute in `Output Attributes`
-7. load the attribute in the shader with the previously assigned identifier
+1. Add/import the node group from the blend-file
+2. Connect the base curve and the profile curve to the node
+3. Connect the output `UVs` to a new socket of `Group Output`
+4. Connect the output `Caps Mask` to a new socket of `Group Output` (optional, if you want to make the scaling/texturing of the caps independent of the side faces)
+5. Set the `Attribute Domain` of this group outputs to [Face corner](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/attributes_reference.html#attribute-domains) (!!!)
+6. Add a [Set Material](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/material/set_material.html) node to the geometry before `Group Output`
+7. Assign an identifier for this attributes in `Output Attributes`
+8. Load the attributes in the shader with the previously assigned identifier
+
+...Remember: This node works with **Face Corners** and not with **Points**, so always pay attention to the outputs.
 
 
 
@@ -45,6 +50,17 @@ Unlike the approach of calculating the UVs based on vertices, this variant does 
 
 
 
-## TODO/WIP
+## Notes
+- A more detailed description can be found on [blender.stackexchange.com](https://blender.stackexchange.com/questions/258246/node-curve-to-mesh-with-uvs-in-blender-3-1)
+- On [blenderartists.org](https://blenderartists.org/t/curve-to-mesh-with-uvs-node-group-for-blender-3-0-geometry-nodes/1362714/3), the very talented user *[zeroSkilz](https://blenderartists.org/u/zeroskilz)* has an interesting project in which this mechanism is now also used:
+[Z-Curve-Sweeper for Blender 3.0 (Curve-to-Mesh with superpowers)](https://blenderartists.org/t/z-curve-sweeper-for-blender-3-0-curve-to-mesh-with-superpowers/1365277)
 
-- The scaling of cap UVs needs to be optimized.
+> Please leave the credits/authors unchanged if you use this node group in your public projects to support my work and consider a small donation if you like this project.
+
+
+
+## Credits
+
+Dedicated to **Dominik Mörth**
+
+Written by **Stephan Kellermayr**
