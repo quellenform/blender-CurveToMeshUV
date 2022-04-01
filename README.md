@@ -51,7 +51,7 @@ Unlike the approach of calculating the UVs based on vertices, this variant does 
 
 
 ## Notes
-- A more detailed description can be found on [blender.stackexchange.com](https://blender.stackexchange.com/questions/258246/node-curve-to-mesh-with-uvs-in-blender-3-1)
+- A more detailed description can be found on [blender.stackexchange.com](https://blender.stackexchange.com/questions/258246)
 - On [blenderartists.org](https://blenderartists.org/t/curve-to-mesh-with-uvs-node-group-for-blender-3-0-geometry-nodes/1362714/3), the very talented user *[zeroSkilz](https://blenderartists.org/u/zeroskilz)* has an interesting project in which this mechanism is now also used:
 [Z-Curve-Sweeper for Blender 3.0 (Curve-to-Mesh with superpowers)](https://blenderartists.org/t/z-curve-sweeper-for-blender-3-0-curve-to-mesh-with-superpowers/1365277)
 
