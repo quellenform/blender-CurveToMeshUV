@@ -1,4 +1,4 @@
-# Curve to Mesh UV
+# Curve to Mesh UV [Free Version]
 
 [![Blender](https://img.shields.io/badge/Blender-3.1+-%23ea7600?style=for-the-badge)](https:/www.blender.org/)
 ![License](https://img.shields.io/github/license/quellenform/blender-CurveToMeshUV?style=for-the-badge)
@@ -19,6 +19,19 @@ This node group generates these missing UVs for you, based on the existing face 
 Unlike the approach of calculating the UVs based on vertices, this variant calculates UVs based on the face corners. The node works with all types of curves and can also process cyclic curves as well as multiple curves simultaneously.
 
 ![Complete Node v1.7.02](https://i.stack.imgur.com/dSjQM.png)
+
+
+
+## Want more?
+
+The solution presented here is an excerpt from an even more extensive project available in the *Blender Market*, which can also handle overlapping profile curves, as well as correct the normals of the generated faces (interesting for letters or other complex shapes):  
+![Complete Node v1.7.02 - Pro Version](https://i.stack.imgur.com/xbSzt.png)
+
+Open source may be all well and good, but development costs time and money. With your contribution you support new features and further updates. Thank you!
+
+Get the full version here: [Curve to Mesh UV - Perfect UVs with Geometry Nodes](https://blendermarket.com/products/curve-to-mesh-uv)
+
+See it in action on [YouTube](https://www.youtube.com/watch?v=tcePCjJxZ20)
 
 
 
@@ -45,7 +58,7 @@ Remember: This node works with **Face Corners** and not with **Points**, so alwa
 - On [blenderartists.org](https://blenderartists.org/t/curve-to-mesh-with-uvs-node-group-for-blender-3-0-geometry-nodes/1362714/3), the very talented user *[zeroSkilz](https://blenderartists.org/u/zeroskilz)* has an interesting project in which an older version of this mechanism is also used:
 [Z-Curve-Sweeper for Blender 3.0 (Curve-to-Mesh with superpowers)](https://blenderartists.org/t/z-curve-sweeper-for-blender-3-0-curve-to-mesh-with-superpowers/1365277)
 
-> Please consider a small donation if you like this project, or buy the full version at [Blender Market](https://blendermarket.com/products/curve-to-mesh-uv) to support further development.
+> Please consider a small donation if you like this project, or buy the full version at [Blender Market](https://blendermarket.com/products/curve-to-mesh-uv) to support further development. Thank you!
 
 
 
