@@ -3,7 +3,7 @@
 [![Blender](https://img.shields.io/badge/Blender-3.1+-%23ea7600?style=for-the-badge)](https:/www.blender.org/)
 ![License](https://img.shields.io/github/license/quellenform/blender-CurveToMeshUV?style=for-the-badge)
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://www.paypal.me/quellenform)
-[![Buy](https://img.shields.io/badge/Buy-BlenderMarket-green.svg?style=for-the-badge)](https://www.paypal.me/quellenform)
+[![Buy](https://img.shields.io/badge/Buy-BlenderMarket-green.svg?style=for-the-badge)](https://blendermarket.com/products/curve-to-mesh-uv)
 
 A node group for [Blender](https://www.blender.org/) that creates curve-based meshes with UVs based on [Geometry Nodes](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/index.html).
 
@@ -25,6 +25,7 @@ Unlike the approach of calculating the UVs based on vertices, this variant calcu
 ## Want more?
 
 The solution presented here is an excerpt from an even more extensive project available in the *Blender Market*, which can also handle overlapping profile curves, as well as correct the normals of the generated faces (interesting for letters or other complex shapes):  
+
 ![Complete Node v1.7.02 - Pro Version](https://i.stack.imgur.com/xbSzt.png)
 
 Open source may be all well and good, but development costs time and money. With your contribution you support new features and further updates. Thank you!
