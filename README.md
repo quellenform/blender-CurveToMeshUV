@@ -1,9 +1,11 @@
 # Curve to Mesh UV [Free Version]
 
-[![Blender](https://img.shields.io/badge/Blender-3.1+-%23ea7600?style=for-the-badge)](https:/www.blender.org/)
-![License](https://img.shields.io/github/license/quellenform/blender-CurveToMeshUV?style=for-the-badge)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg?style=for-the-badge)](https://www.paypal.me/quellenform)
-[![Buy](https://img.shields.io/badge/Buy-BlenderMarket-green.svg?style=for-the-badge)](https://blendermarket.com/products/curve-to-mesh-uv)
+[![Blender](https://img.shields.io/badge/Blender-3.1+-%23ea7600)](https:/www.blender.org/)
+![License](https://img.shields.io/github/license/quellenform/blender-CurveToMeshUV)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/quellenform)
+[![Buy](https://img.shields.io/badge/Buy-BlenderMarket-green.svg)](https://blendermarket.com/products/curve-to-mesh-uv)
+[![Buy](https://img.shields.io/badge/Buy-Gumroad-green.svg)](https://quellenform.gumroad.com/l/curve-to-mesh-uv)
+[![Documentation Status](https://readthedocs.org/projects/blender-curvetomeshuv/badge/?version=latest)](https://curve-to-mesh-uv.docs.quellenform.at/en/latest/?badge=latest)
 
 A node group for [Blender](https://www.blender.org/) that creates curve-based meshes with UVs based on [Geometry Nodes](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/index.html).
 
@@ -30,7 +32,10 @@ The solution presented here is an excerpt from an even more extensive project av
 
 Open source may be all well and good, but development costs time and money. With your contribution you support new features and further updates. Thank you!
 
-Get the full version here: [Curve to Mesh UV - Perfect UVs with Geometry Nodes](https://blendermarket.com/products/curve-to-mesh-uv)
+Get the full version here:
+- [Gumroad](https://quellenform.gumroad.com/l/curve-to-mesh-uv)
+- [Blender Market](https://blendermarket.com/products/curve-to-mesh-uv)
+
 
 See it in action on [YouTube](https://www.youtube.com/watch?v=tcePCjJxZ20)
 
@@ -51,15 +56,21 @@ Remember: This node works with **Face Corners** and not with **Points**, so alwa
 
 
 
+## Documentation
+
+You can find detailed documentation here: [Curve to Mesh UV - Perfect UVs with Geometry Nodes](https://curve-to-mesh-uv.docs.quellenform.at/)
+
+
+
 ## Notes
 - This free version is optimized for Blender 3.4, but can be easily adapted to version 3.1 with a few minor changes (*Lite* and *Pro* are compatible to 3.1+)
 - The *Lite* and *Pro* editions include more functions for processing intersecting profile curves and other very nice features
-- The *Lite* and *Pro* edition can be purchased at [Blender Market](https://blendermarket.com/products/curve-to-mesh-uv)
+- The *Lite* and *Pro* edition can be purchased at [Gumroad](https://quellenform.gumroad.com/l/curve-to-mesh-uv) or [Blender Market](https://blendermarket.com/products/curve-to-mesh-uv)
 - A more detailed description can be found on [blender.stackexchange.com](https://blender.stackexchange.com/questions/258246)
 - On [blenderartists.org](https://blenderartists.org/t/curve-to-mesh-with-uvs-node-group-for-blender-3-0-geometry-nodes/1362714/3), the very talented user *[zeroSkilz](https://blenderartists.org/u/zeroskilz)* has an interesting project in which an older version of this mechanism is also used:
 [Z-Curve-Sweeper for Blender 3.0 (Curve-to-Mesh with superpowers)](https://blenderartists.org/t/z-curve-sweeper-for-blender-3-0-curve-to-mesh-with-superpowers/1365277)
 
-> Please consider a small donation if you like this project, or buy the full version at [Blender Market](https://blendermarket.com/products/curve-to-mesh-uv) to support further development. Thank you!
+> Please consider a small donation if you like this project, or buy the full version to support further development. Thank you!
 
 
 
