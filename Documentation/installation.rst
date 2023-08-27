@@ -7,7 +7,8 @@ First, download the appropriate file for the version of Blender you are using. T
 
 - Blender 3.1
 - Blender 3.2 - 3.3
-- Blender 3.4+
+- Blender 3.4
+- Blender 3.5+
 
 For this product, I have decided against turning it into an installable add-on, as I am convinced that the many add-ons end up creating too many entries in the context menu, through which the node groups can be added in the node editor.
 
