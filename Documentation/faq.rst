@@ -49,6 +49,9 @@ You can always create a UV map for any geometry you have created with Geometry N
 
 However, and this is basically the prerequisite when you work with Geometry Nodes, you have to apply the modifier before. Unfortunately, there is no way around this, because Geometry Nodes is a modifier, and as long as it is not applied, no editable mesh exists.
 
+Blender 3.1 - 3.4
+-----------------
+
 To achieve the desired result you would have to convert the generic attribute created with Geometry Nodes into a UV map. To do this, do the following:
 
 1. Apply the Geometry Nodes modifier by clicking on **Apply** in the *Modifier Properties*.
@@ -65,3 +68,8 @@ I have briefly summarized this in this video:
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto; margin-bottom: 2em;">
         <iframe src="https://www.youtube.com/embed/Q8oopkJXE4o" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
     </div>
+
+Blender 3.5+
+------------
+
+Since version 3.5 this works a little bit different, because UVMaps are now attributes themselves: `How to convert UVMap attribute to UV map in blender 3.6 <https://blender.stackexchange.com/questions/299012/how-to-convert-uvmap-attribute-to-uv-map-in-blender-3-6>`_
