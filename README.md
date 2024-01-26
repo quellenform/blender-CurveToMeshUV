@@ -15,7 +15,7 @@ A node group for [Blender](https://www.blender.org/) that creates curve-based me
 
 ## What does it do?
 
-Unfortunately, Blender does not currently generate UVs with the [Curve to Mesh](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/curve_to_mesh.html) node, which means that texture mapping is not really possible.
+Unfortunately, Blender does not currently generate UVs with the [Curve to Mesh](https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/operations/curve_to_mesh.html) node, which means that texture mapping is not really possible.
 This node group generates these missing UVs for you, based on the existing face corners.
 
 Unlike the approach of calculating the UVs based on vertices, this variant calculates UVs based on the face corners. The node works with all types of curves and can also process cyclic curves as well as multiple curves simultaneously.
