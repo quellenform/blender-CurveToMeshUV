@@ -11,7 +11,7 @@ No. This is technically not possible, because some relevant nodes are missing.
 What is the technique based on?
 ===============================
 
-This technique is mainly based on the nodes `Curve to Mesh <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/curve_to_mesh.html>`_, `Mesh to Curve <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/mesh/mesh_to_curve.html>`_, `Fill Curve <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/fill_curve.html>`_ and `Extrude Mesh <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/mesh/extrude_mesh.html>`_. Of course, any peculiarities (or bugs) existing in these nodes are inherited.
+This technique is mainly based on the nodes `Curve to Mesh <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/operations/curve_to_mesh.html>`_, `Mesh to Curve <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/mesh/operations/mesh_to_curve.html>`_, `Fill Curve <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/operations/fill_curve.html>`_ and `Extrude Mesh <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/mesh/operations/extrude_mesh.html>`_. Of course, any peculiarities (or bugs) existing in these nodes are inherited.
 
 Why do I get an incorrect Mapping by Cyclic Curves?
 ===================================================
@@ -40,7 +40,7 @@ With *Smooth Angle*, a detection of the edge angles is performed and all edges w
 What is "Hole Tolerant"?
 ========================
 
-In this mode, profile curves that overlap are merged together to create a solid mesh. This process recreates the profile curves and creates a new mesh topology that can correctly handle letters and other complex shapes. In addition, the normals of the resulting inward-facing faces are calculated correctly so that they point in the right direction when they overlap. The technique is primarily based on the `Fill Curve <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/fill_curve.html>`_ node, which also inherits any disadvantages of this node, such as the deletion of identical edges, or the forced use of 2D curves.
+In this mode, profile curves that overlap are merged together to create a solid mesh. This process recreates the profile curves and creates a new mesh topology that can correctly handle letters and other complex shapes. In addition, the normals of the resulting inward-facing faces are calculated correctly so that they point in the right direction when they overlap. The technique is primarily based on the `Fill Curve <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/operations/fill_curve.html>`_ node, which also inherits any disadvantages of this node, such as the deletion of identical edges, or the forced use of 2D curves.
 
 Is it possible to convert the generic attributes to a UV map?
 =============================================================

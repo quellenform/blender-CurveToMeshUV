@@ -4,6 +4,17 @@ Changelog
 
 All notable changes to this project will be documented in this file.
 
+2024-05-04 - Version 1.7.03
+***************************
+
+Bugfix Release
+
+- **Changed (Blender 3.2 and above):** Changed default attribute name from "UVMap" to "uv_map"
+- **Changed (Blender 3.2 and above):** Changed default attribute name from "CapsMask" to "caps_mask"
+- **Removed (Blender 3.2 and above):** Option "Store Attributes" (Attributes are now saved as soon as the fields for "UV Map" and "Caps Mask" are filled in, which saves an additional checkbox in the panel and is a preparation for the upcoming version)
+- **Fixed (Blender 3.1):** Indices were captured in the wrong domain (was *Spline* instead of *Point*)
+- **Fixed (All Versions):** Incorrect face corner indices were applied when using multiple different curves (cyclic/non-cyclic)
+
 2023-02-10 - Version 1.7.02
 ***************************
 

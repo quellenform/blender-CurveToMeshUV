@@ -13,7 +13,7 @@ Fill Caps
 
 .. image:: images/options-fill-caps.gif
 
-When this option is enabled, caps are created at the ends of the base curves. If the *Hole Tolerant* option is also enabled, and several profile curves that extend into each other are used, they will be merged. In this case, the `Fill Curve <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/fill_curve.html>`_ node is used, which means that all the properties of this node also come into play (use of 2D profile curves, possible removal of identical edges, etc.).
+When this option is enabled, caps are created at the ends of the base curves. If the *Hole Tolerant* option is also enabled, and several profile curves that extend into each other are used, they will be merged. In this case, the `Fill Curve <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/operations/fill_curve.html>`_ node is used, which means that all the properties of this node also come into play (use of 2D profile curves, possible removal of identical edges, etc.).
 
 Lock Caps UV-Scaling
 --------------------
@@ -44,24 +44,24 @@ Hole Tolerant
 
     *Hole Tolerant* **enabled**
 
-In this mode, profile curves that extend into each other are merged together to create a solid mesh. This process recreates the profile curves and creates a new mesh topology that can correctly handle letters and other complex shapes. In addition, the normals of the resulting inward-facing faces are calculated correctly so that they point in the right direction when they overlap. The technique is primarily based on the `Fill Curve <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/fill_curve.html>`_ node, which means that any disadvantages of this node are also inherited. So make sure that your curves are flawless.
+In this mode, profile curves that extend into each other are merged together to create a solid mesh. This process recreates the profile curves and creates a new mesh topology that can correctly handle letters and other complex shapes. In addition, the normals of the resulting inward-facing faces are calculated correctly so that they point in the right direction when they overlap. The technique is primarily based on the `Fill Curve <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/operations/fill_curve.html>`_ node, which means that any disadvantages of this node are also inherited. So make sure that your curves are flawless.
 
 .. important::
     Due to the way the available nodes work in the background, the following peculiarities arise for the Hole Tolerant mode:
     - The Z-positions of the curves are reset to :math:`0` (only 2D curves possible).
 
-- Splitting the edges by *Smooth Angle* creates a separation at the edges of the mesh (non-manifold), because in Geometry Nodes (currently) the normals cannot be influenced directly.
+- Splitting the edges by *Smooth Angle* creates a separation at the edges of the mesh (non-manifold).
 - If additional caps are created, they will also be automatically separated from the mesh.
 - The profile curve must be a closed curve (cyclic spline) or non-cyclic splines are automatically applied as closed curves!
-- No trimming of the profile curve may take place before (e.g. by previous use of `Trim Curve <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/trim_curve.html>`_), because a cyclic curve is expected and in this case it can lead to undesired results.
-- In the mode *Hole Tolerant* it can come to a cancellation of edges, if these lie exactly on top of each other (Caused by the node `Fill Curve <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/fill_curve.html>`_ and with a match that is smaller than :math:`0.0007`).
+- No trimming of the profile curve may take place before (e.g. by previous use of `Trim Curve <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/operations/trim_curve.html>`_), because a cyclic curve is expected and in this case it can lead to undesired results.
+- In the mode *Hole Tolerant* it can come to a cancellation of edges, if these lie exactly on top of each other (Caused by the node `Fill Curve <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/operations/fill_curve.html>`_ and with a match that is smaller than :math:`0.0007`).
 
 Smooth Angle
 ------------
 
 **(Pro only)**
 
-With *Smooth Angle*, a detection of the edge angles is performed and all edges whose angles are above the defined value are assumed to be sharp edges. However, the edges are split, resulting in a non-monifold mesh. Unfortunately there is no other option in Geometry Nodes, because here the normals of the faces cannot be influenced directly.
+With *Smooth Angle*, a detection of the edge angles is performed and all edges whose angles are above the defined value are assumed to be sharp edges. However, the edges are split, resulting in a non-monifold mesh.
 
 .. Note::
   This option is only available in conjunction with *Hole Tolerant*.

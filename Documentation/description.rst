@@ -10,7 +10,7 @@ Description
     </div>
 
 
-The `Curve to Mesh <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/curve_to_mesh.html>`_ node is great, but it is missing an important function: **UV Mapping!**
+The `Curve to Mesh <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/curve/operations/curve_to_mesh.html>`_ node is great, but it is missing an important function: **UV Mapping!**
 
 This node group fills that gap and creates a solid UV mapping along the created mesh.
 
@@ -28,7 +28,7 @@ Why should you buy this thing?
 
 ...Because there is no other reliable alternative!
 
-In the case of *Curve to Mesh*, the `UV Unwrap <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/uv/uv_unwrap.html>`_ node won't help you either, because in this case it can't create a mapping that exactly follows the topology of the mesh you created.
+In the case of *Curve to Mesh*, the `UV Unwrap <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/mesh/uv/uv_unwrap.html>`_ node won't help you either, because in this case it can't create a mapping that exactly follows the topology of the mesh you created.
 
 Where to buy the product?
 =========================
@@ -104,5 +104,50 @@ Which functions are included in which version?
 +----------------------------------------------------+-------+------+------+
 | Sharp Edges at specific Angle                      |       |      | Yes  |
 +----------------------------------------------------+-------+------+------+
-| Supported Blender Versions                         | 3.4+  | 3.1+ | 3.1+ |
+| Supported Blender Versions                         | 3.1+                |
 +----------------------------------------------------+-------+------+------+
+
+Dedicated Versions
+==================
+
+The differences are minor and mainly contain small optimizations. In some cases, they also contain slightly modified nodes, as these have changed over the Blender versions. The node groups are generally upwards compatible as far as possible, but the latest available version should always be used if possible.
+
+Dedicated versions are available for the following Blender versions:
+
++-----+-------+--------+--------+
+|     | BASIC | LITE   | PRO    |
++=====+=======+========+========+
+| 3.1 | x     | x      | x      |
++-----+-------+--------+--------+
+| 3.2 |       | x      | x      |
++-----+-------+--------+--------+
+| 3.3 |       |        |        |
++-----+-------+--------+--------+
+| 3.4 | x     | x      | x      |
++-----+-------+--------+--------+
+| 3.5 |       | x      | x      |
++-----+-------+--------+--------+
+| 3.6 |       |        |        |
++-----+-------+--------+--------+
+| 4.0 |       | x [1]_ | x [1]_ |
++-----+-------+--------+--------+
+| 4.1 |       | x [1]_ | x [1]_ |
++-----+-------+--------+--------+
+
+Compatibility
+=============
+
+The available node groups have been tested or optimized with the following versions:
+
++-------+--------+-------+--------+-------+-------+--------+-------+-------+
+|       | 3.1.2  | 3.2.2 | 3.3.18 | 3.4.1 | 3.5.1 | 3.6.11 | 4.0.2 | 4.1.1 |
++=======+========+=======+========+=======+=======+========+=======+=======+
+| BASIC | x      | x     | x      | x     | x     | x      | x     | x     |
++-------+--------+-------+--------+-------+-------+--------+-------+-------+
+| LITE  | x [2]_ | x     | x      | x     | x     | x      | x     | x     |
++-------+--------+-------+--------+-------+-------+--------+-------+-------+
+| PRO   | x [2]_ | x     | x      | x     | x     | x      | x     | x     |
++-------+--------+-------+--------+-------+-------+--------+-------+-------+
+
+.. [1] A version specially adapted to version 4+ will be released soon. This will include the new UI options available in this Blender version and will be improved thanks to the newly available nodes.
+.. [2] Due to the missing node `Store Named Attribute <https://docs.blender.org/manual/en/latest/modeling/geometry_nodes/attribute/store_named_attribute.html>`_ the storing of attributes does unfortunately not work in version 3.1.
