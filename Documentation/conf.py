@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Geometry Nodes Overview'
+project = 'Curve to Mesh UV'
 copyright = '2023, Stephan Kellermayr'
 author = 'Quellenform'
 
@@ -29,14 +29,13 @@ intersphinx_disabled_domains = ['std']
 templates_path = ['_templates']
 
 # -- Options for HTML output
-# https://sphinx-rtd-theme.readthedocs.io/en/stable/configuring.html
 
 html_theme = 'sphinx_rtd_theme'
 html_logo = 'images/logo.png'
 html_favicon = 'images/icon.ico'
 html_theme_options = {
     'analytics_anonymize_ip': True,
-    'display_version': False,
+    'display_version': True,
     'logo_only': False,
     'titles_only': False,
     'display_github': 'raw',
